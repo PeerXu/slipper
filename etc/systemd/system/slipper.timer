@@ -1,0 +1,10 @@
+[Unit]
+Description=Slipper Timer
+
+[Timer]
+OnBootSec=5min
+OnCalendar=*:0/1
+Unit=slipper.target
+
+[Install]
+WantedBy=basic.target

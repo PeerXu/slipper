@@ -1,0 +1,13 @@
+[Unit]
+Description=Slipper: Upload Public IP Address to Github.
+Wants=slipper.timer
+
+[Service]
+WorkingDirectory=/opt/slipper/
+ExecStart=/bin/bash /opt/slipper/get-external-ip-address.sh
+User=peer
+Group=peer
+Nice=19
+
+[Install]
+WantedBy=slipper.target
