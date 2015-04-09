@@ -13,7 +13,7 @@ if [[ "x$EXTERNAL_ADDRESS" != "x$CACHED_ADDRESS" ]]; then
   echo $msg
   echo -n $EXTERNAL_ADDRESS > cached
   git add .
-  git commit -a -m $msg
+  git commit -a -m "$msg"
   git push origin master
 fi
 
